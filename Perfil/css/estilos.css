@@ -1,0 +1,224 @@
+/* Estilos para el CV */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 30%;
+    background: #e7e7e7;
+    padding: 20px;
+}
+
+.sidebar .photo img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.sidebar h3 {
+    font-size: 1.2em;
+    color: #444;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.sidebar h3::before {
+    content: '\f2b9'; 
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 10px;
+    color: #ba7070;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    position: relative;
+}
+
+.sidebar ul li::before {
+    content: '\f0da'; 
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #ba7070;
+    margin-right: 10px;
+    font-size: 0.8em;
+    position: absolute;
+    left: -15px;
+    top: 5px;
+}
+
+.contact p {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.contact p i {
+    margin-right: 10px;
+    color: #ba7070;
+}
+
+.contact p.phone i {
+    content: '\f095'; 
+}
+
+.contact p.email i {
+    content: '\f0e0';
+}
+
+.social p {
+    margin-bottom: 10px;
+}
+
+.social p i {
+    margin-right: 10px;
+    color: #ba7070;
+}
+
+.social p i.instagram {
+    content: '\f16d'; 
+}
+
+.main-content {
+    width: 70%;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #ba7070;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+header h1::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #ba7070;
+    margin-top: 10px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #ba7070;
+    padding-bottom: 5px;
+    color: #ba7070;
+    position: relative;
+}
+
+section h2::before {
+    content: '';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 10px;
+    color: #ba7070;
+}
+
+section p, section ul {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+.awards ul li {
+    list-style: circle;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #e7e7e7;
+    font-size: 0.9em;
+    color: #555;
+}
+
+footer a {
+    color: #ba7070;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        max-width: 100%;
+    }
+
+    .main-content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section h2 {
+        font-size: 1.2em;
+    }
+
+    .sidebar {
+        padding: 10px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+}
